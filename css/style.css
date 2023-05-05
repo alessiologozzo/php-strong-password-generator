@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(51, 49, 49);
+    color: white;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+input[type="text"]{
+    width: 300px;
+    padding: 0.2rem;
+    background-color: white;
+    color: black;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+::placeholder{
+    color: black;
+    opacity: 0.7;
+}
+
+.al-button{
+    background-color: lightgray;
+    color: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    transition: transform 300ms;
+}
+
+.al-button:hover{
+    transform: scale(1.1);
+}
+
+label{
+    cursor: pointer;
+}
+
+.al-h{
+    height: 100vh;
+}
+
+.al-m{
+    margin-top: -2rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
