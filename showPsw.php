@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +16,8 @@
     <div class="al-h container d-flex flex-column justify-content-center align-items-center gap-2">
         <strong class="al-m pe-1">La password generata per te è: </strong>
         <span><?php 
-            session_start();
             foreach($_SESSION["chars"] as $car)
                 echo $car;
-            $_SESSION["cars"][0];
         ?></span>
 
         <div class="d-flex justify-content-center align-items-center mt-2">

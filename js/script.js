@@ -5,12 +5,8 @@ submit.addEventListener("click", (e) => checkInput(e));
 
 function checkInput(e){
     let num = parseInt(input.value);
-    console.log(input.value);
 
-    if(typeof num == "number" && num >=4 && num <= 50){
-        console.log("prova");
-    }
-    else{
+    if(Number.isNaN(num) || num < 4 || num > 50){
         e.preventDefault();
         input.value = "";
         input.placeholder = "Errore. Inserisci un numero da 4 a 50...";
